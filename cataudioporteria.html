@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distribución - Audio Porteria</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/icono.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="menu-btn" onclick="toggleDropdown()"><span class="hamburguesa">&#9776;</span>Categorías</div>
+        <div class="dropdown" id="dropdown">
+          <a href="/catVideoPorteria.html">Video Portería</a>
+          <a href="/catAudioPorteria.html">Audio Porteria</a>
+        </div>
+      </nav>
+
+
+  <div class="container">
+    <a href="/audio-porteria/1portSimple.html" class="box">
+      <img src="/img/bannerAudioPortero/porteriaSimple.jpg" alt="video portero">
+      <p class="p-titulo">Audio Portería Simple</p>
+    </a>
+
+    <a href="/audio-porteria/2portEdificios.html" class="box">
+      <img src="/img/bannerAudioPortero/prteriaEdificios.jpg" alt="audio portero">
+      <p class="p-titulo">Audio Portería Edificios</p>
+    </a>
+
+    <a href="/audio-porteria/3kitsAudio.html" class="box">
+      <img src="/img/bannerAudioPortero/kitAudio.JPG" alt="audio portero">
+      <p class="p-titulo">Kits de Audio Portería</p>
+    </a>
+
+    <a href="/audio-porteria/4int6y12internos.html" class="box">
+      <img src="/img/bannerAudioPortero/int6y12internos.jpg" alt="audio portero">
+      <p class="p-titulo">Intercomunicador de 6 y 12 internos</p>
+    </a>
+
+    <a href="/audio-porteria/5int12internos.html" class="box">
+      <img src="/img/bannerAudioPortero/int12internos.jpg" alt="audio portero">
+      <p class="p-titulo">Intercomunicador de 12 internos</p>
+    </a>
+
+    <a href="/audio-porteria/6int10internos.html" class="box">
+        <img src="/img/bannerAudioPortero/int10internos.webp" alt="audio portero">
+        <p class="p-titulo">Intercomunicador manos libres 10 internos</p>
+      </a>
+
+      <a href="/audio-porteria/7enfermeria.html" class="box">
+        <img src="/img/bannerAudioPortero/enfermeria.webp" alt="audio portero">
+        <p class="p-titulo">Sistema de Enfermería</p>
+      </a>
+  </div>
+
+
+  <script>
+    function toggleDropdown() {
+      var dropdown = document.getElementById("dropdown");
+      dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+
+</html>

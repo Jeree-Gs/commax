@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page del Producto</title>
+    <link rel="stylesheet" href="/stylesLanding.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #product-carousel {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        #product-carousel img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Carrusel de imágenes usando Owl Carousel -->
+    <div id="product-carousel" class="owl-carousel">
+        <img src="/img/videoPortero/CDV35A/CDV35A-2.jpg" alt="Imagen 1">
+        <img src="/img/videoPortero/CDV35A/CDV35A-3.jpg" alt="Imagen 2">
+        <img src="/img/videoPortero/CDV35A/CDV35A.jpg" alt="Imagen 3">
+    </div>
+
+    <div id="product-info">
+        <div id="product-title">Nombre del Producto</div>
+        <div id="product-description">Descripción detallada del producto. Puedes proporcionar información relevante aquí.</div>
+        <div id="product-brand">Marca del Producto</div>
+        <div id="product-price">$99.99</div>
+        <div id="product-stock">Disponible en stock: 50 unidades</div>
+    </div>
+</div>
+
+<!-- Inicializa el carrusel usando Owl Carousel después de cargar el DOM -->
+<script>
+    $(document).ready(function(){
+        $('#product-carousel').owlCarousel({
+            items: 1,  // Muestra una imagen a la vez
+            loop: true,  // Repetir el carrusel al llegar al final
+            dots: true,  // Muestra puntos de navegación
+            autoplay: true,  // Reproducción automática
+            autoplayHoverPause: true  // Pausa la reproducción automática al pasar el ratón
+        });
+    });
+</script>
+
+</body>
+</html>

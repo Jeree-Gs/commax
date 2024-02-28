@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribución</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/icono.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="menu-btn" onclick="toggleDropdown()"><span class="hamburguesa">&#9776;</span>Categorías</div>
+        <div class="dropdown" id="dropdown">
+          <a href="/catVideoPorteria.html">Video Portería</a>
+          <a href="/catAudioPorteria.html">Audio Porteria</a>
+        </div>
+      </nav>
+      
+
+      <div class="container">
+        <a href="/catVideoPorteria.html" class="box">
+          <img src="/img/bannerVideoPortero.png" alt="video portero">
+          <p class="p-titulo">Video Portería</p>
+        </a>
+      
+        <a href="/catAudioPorteria.html" class="box">
+          <img src="/img/bannerAudioPortero.JPG" alt="audio portero">
+          <p class="p-titulo">Audio Portería</p>
+        </a>
+       </div>
+
+
+      <script>
+        function toggleDropdown() {
+          var dropdown = document.getElementById("dropdown");
+          dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distribución - Video Porteria</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/icono.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav>
+    <div class="menu-btn" onclick="toggleDropdown()"><span class="hamburguesa">&#9776;</span>Categorías</div>
+    <div class="dropdown" id="dropdown">
+      <a href="/catVideoPorteria.html">Video Portería</a>
+      <a href="/catAudioPorteria.html">Audio Porteria</a>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <a href="/video-porteria/1fineView.html" class="box">
+      <img src="/img/bannerVideoPortero.png" alt="video portero">
+      <p class="p-titulo">Monitores Fine View / Económicos</p>
+    </a>
+
+    <a href="/video-porteria/2wifiHD.html" class="box">
+      <img src="/img/bannerVideoPortero/WIFI&HD.jpg" alt="audio portero">
+      <p class="p-titulo">Monitores Wifi y HD</p>
+    </a>
+
+    <a href="/video-porteria/3kitCompleto.html" class="box">
+      <img src="/img/bannerVideoPortero/kitsCompletos.JPG" alt="audio portero">
+      <p class="p-titulo">Kits Ultra Completos</p>
+    </a>
+
+    <a href="/video-porteria/4frenteBotoneras.html" class="box">
+      <img src="/img/bannerVideoPortero/botoneras.png" alt="audio portero">
+      <p class="p-titulo">Frentes de Calle y Botoneras</p>
+    </a>
+
+    <a href="/video-porteria/5citofonoVideoPorteros.html" class="box">
+      <img src="/img/bannerVideoPortero/citofonos.jpg" alt="audio portero">
+      <p class="p-titulo">Citofonos para Video Porteros</p>
+    </a>
+  </div>
+
+
+  <script>
+    function toggleDropdown() {
+      var dropdown = document.getElementById("dropdown");
+      dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+
+</html>
