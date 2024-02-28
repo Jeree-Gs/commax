@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Porterías</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/icono.png" type="image/x-icon">
+    <meta name="theme-color" content="#1a1a1a">
+</head>
+
+<body>
+    <nav>
+        <div class="menu-btn" onclick="toggleDropdown()"><span class="hamburguesa">&#9776;</span>Categorías</div>
+        <div class="dropdown" id="dropdown">
+            <a href="/catVideoPorteria.html">Video Portería</a>
+            <a href="/catAudioPorteria.html">Audio Porteria</a>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <a href="" class="box-product">
+            <img src="/img" alt="">
+            <div>
+                <p class="p-titulo"></p>
+                <p class="p-codigo"></p>
+                <p class="p-marca">COMMAX</p>
+                <p class="p-precio">0 Bs.</p>
+                <p class="p-stock">0 en stock</p>
+            </div>
+        </a>
+
+        
+
+        
+    </div>
+
+
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+
+</html>
